@@ -1,0 +1,340 @@
+body {
+  background-color: #fcfcfc;
+  margin: auto;
+  width: 80%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Candal;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+  color: white;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #213e4e;
+  width: 100%;
+  text-align: center;
+  border-top: 1px dashed #958e8c;
+  border-left: 1px dashed #958e8c;
+  border-right: 1px dashed #958e8c;
+  padding: 25px 0 25px 0;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #fb8b9b;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #213e4e;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  padding: 30px 50px 30px 50px;
+  gap: 50px;
+}
+
+.logo {
+  height: 100px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.serv-mutualise,
+.serv-dedie,
+.solution-cloud,
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Candal;
+  gap: 7px;
+  transition: 0.3s;
+}
+
+i {
+  color: #fb8b9b;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fb8b9b;
+  i {
+    color: #213e4e;
+  }
+}
+
+.img-background {
+  height: 550px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banniere {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+}
+
+.ban-text-bloc {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+}
+
+.ban-text-bloc p {
+  color: white;
+  font-family: Candal;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.recherche {
+  background-color: #fb8b9b;
+  width: 100%;
+  padding: 20px 20px 20px 50px;
+  font-family: "Open Sans";
+  color: #febec7;
+  letter-spacing: 5px;
+  font-weight: 500;
+  margin: 0;
+  border: 0;
+}
+
+input::placeholder {
+  color: #febec7;
+}
+
+section {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.option-bloc {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+.choix {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  width: 100%;
+}
+
+.choix i {
+  font-size: 36px;
+}
+
+.prix {
+  text-align: center;
+  font-size: 1.5em;
+  color: #fb8b9b;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.choix p {
+  font-family: "Open Sans";
+  color: #958e8c;
+  margin: auto;
+  width: 85%;
+  padding-top: 20px;
+}
+
+footer {
+  background-color: #213e4e;
+  margin: 0;
+  height: 300px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 50px 70px 50px 70px;
+}
+
+footer li {
+  display: flex;
+}
+
+footer a {
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+/* Page Mutualise */
+
+.card {
+  border: 1px dashed #958e8c;
+  padding: 10px;
+  gap: 20px;
+  cursor: pointer;
+
+  h3 {
+    background-color: #213e4e;
+    color: white;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    text-align: center;
+  }
+  .prix {
+    color: #958e8c;
+    font-weight: 800;
+  }
+}
+
+.choix.card {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.option-bloc:hover .choix.card {
+  opacity: 0.3;
+}
+
+.option-bloc .choix.card:hover {
+  opacity: 1;
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: #fb8b9b;
+  border: none;
+  padding: 10px 0 10px 0;
+  cursor: pointer;
+}
+
+.text-sous-titre {
+  font-family: "Open Sans";
+  color: #958e8c;
+  margin: auto;
+  padding-top: 20px;
+}
+
+/* Page Contact */
+
+.info-contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  font-family: "Open Sans";
+
+  p {
+    color: #958e8c;
+  }
+
+  i {
+    font-size: 40px;
+  }
+}
+.data {
+  width: 100%;
+  border-top: 1px dashed #fb8b9b;
+
+  a {
+    color: #fb8b9b;
+  }
+}
+
+.adresse {
+  font-style: italic;
+
+  span {
+    font-weight: 500;
+    color: #213e4e;
+  }
+}
+
+.plan-map {
+  width: 100%;
+
+  iframe {
+    width: 100%;
+  }
+}
+
+/* Responsive Tablette Smartphone */
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    ul {
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  .option-bloc {
+    flex-direction: column;
+  }
+}
