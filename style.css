@@ -337,4 +337,14 @@ footer a {
   .option-bloc {
     flex-direction: column;
   }
+
+  footer {
+    height: 400px;
+  }
+
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
